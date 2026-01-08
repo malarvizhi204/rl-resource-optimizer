@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup - AI Optimizer</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .setup-box {
+            text-align: center;
+            padding: 40px;
+            border: 1px solid #333;
+            border-radius: 15px;
+            background: #1e1e1e;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        h2 { color: #28a745; margin-bottom: 20px; }
+        p { color: #ccc; }
+        select {
+            padding: 12px;
+            width: 250px;
+            background: #2b2b2b;
+            color: white;
+            border: 1px solid #444;
+            border-radius: 5px;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+        .btn-run {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+        .btn-run:hover { background-color: #218838; transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <div class="setup-box">
+        <h2>Agent Configuration</h2>
+        <p>Select Resource to Optimize:</p>
+        <select>
+            <option>CPU Utilization</option>
+            <option>Bandwidth Allocation</option>
+        </select>
+        <p>Optimization Target: 97%</p>
+        <br>
+        <a href="/dashboard" class="btn-run">Start RL Optimization</a>
+    </div>
+</body>
+</html>
